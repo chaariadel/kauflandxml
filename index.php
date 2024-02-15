@@ -20,10 +20,10 @@ define('LARAVEL_START', microtime(true));
 | loading any of our classes later on. It feels great to relax.
 |
 */
-if (file_exists($maintenance = __DIR__.'/DD_project/storage/framework/maintenance.php')) {
+if (file_exists($maintenance = __DIR__.'/kaufland/storage/framework/maintenance.php')) {
     require $maintenance;
 }
-require __DIR__.'/DD_project/vendor/autoload.php';
+require __DIR__.'/kaufland/vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +37,7 @@ require __DIR__.'/DD_project/vendor/autoload.php';
 |
 */
 
-$app = require_once __DIR__.'/DD_project/bootstrap/app.php';
+$app = require_once __DIR__.'/kaufland/bootstrap/app.php';
 
 /*
 |--------------------------------------------------------------------------
